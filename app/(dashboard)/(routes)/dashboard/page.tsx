@@ -1,7 +1,10 @@
-import {Button} from "@/components/ui/button";
+import { UserButton } from "@clerk/nextjs"
 
 export default function DashboardPage() {
   return (
-    <Button variant="destructive">Click Me</Button>
-  )
+    <div>
+    <p>Dashboard Page (Protected)</p>
+    <UserButton afterSignOutUrl="/"/>
+    </div>
+    )
 }
